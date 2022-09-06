@@ -1,0 +1,25 @@
+{
+  "verasmApp": {
+    "applicationUser": {
+      "home": {
+        "title": "ApplicationUsers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Application User",
+        "createOrEditLabel": "Genera o modifica un Application User",
+        "notFound": "No Application Users found"
+      },
+      "created": "&Egrave; stato generato un nuovo Application User con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Application User identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Application User con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Application User {{ id }}?"
+      },
+      "detail": {
+        "title": "Application User"
+      },
+      "id": "ID",
+      "mainUsername": "Main Username",
+      "internalUser": "Internal User"
+    }
+  }
+}

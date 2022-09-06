@@ -1,0 +1,25 @@
+{
+  "verasmApp": {
+    "applicationUser": {
+      "home": {
+        "title": "ApplicationUsers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Application User बनाएँ",
+        "createOrEditLabel": "Application User बनाएँ या संपादित करें",
+        "notFound": "No Application Users found"
+      },
+      "created": "एक नया Application User [identifier: {{ param }}] तैयार है",
+      "updated": "एक Application User [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Application User [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Application User [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Application User"
+      },
+      "id": "ID",
+      "mainUsername": "Main Username",
+      "internalUser": "Internal User"
+    }
+  }
+}

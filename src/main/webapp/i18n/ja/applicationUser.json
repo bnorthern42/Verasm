@@ -1,0 +1,25 @@
+{
+  "verasmApp": {
+    "applicationUser": {
+      "home": {
+        "title": "ApplicationUsers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Application User を追加",
+        "createOrEditLabel": "Application Userを追加または編集",
+        "notFound": "No Application Users found"
+      },
+      "created": "A new Application User is created with identifier {{ param }}",
+      "updated": "A Application User is updated with identifier {{ param }}",
+      "deleted": "A Application User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Application User {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Application User"
+      },
+      "id": "ID",
+      "mainUsername": "Main Username",
+      "internalUser": "Internal User"
+    }
+  }
+}

@@ -1,0 +1,1030 @@
+{
+  "applications": ["verasm"],
+  "changelogDate": "20220906131500",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "skills",
+  "fields": [
+    {
+      "fieldName": "dumptime",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "playername",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "premium",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "server",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "religion",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "prayer",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "channeling",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "preaching",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "exorcism",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hammers",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "warhammer",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "healing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "firstaid",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "clubs",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hugeclub",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "archery",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shortbow",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mediumbow",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "longbow",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "thievery",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "stealing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "lockpicking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "traps",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "warmachines",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "catapults",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "trebuchets",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "ballistae",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "polearms",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "staff",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "longspear",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "halberd",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "prospecting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "coalmaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "milling",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "tracking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "paving",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "archaeology",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "restoration",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "climbing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "thatching",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "firemaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "pottery",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mining",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "digging",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "ropemaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "smithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "blacksmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "locksmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "jewelrysmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "metallurgy",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "weaponsmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "bladessmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "weaponheadssmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "armoursmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shieldsmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "chainarmoursmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "platearmoursmithing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "tailoring",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "clothtailoring",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "leatherworking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "masonry",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "stonecutting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "cooking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hotfoodcooking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "baking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "dairyfoodmaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "butchering",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "beverages",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "nature",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "fishing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "gardening",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "foraging",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "botanizing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "animaltaming",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "forestry",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "farming",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "milking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "meditating",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "animalhusbandry",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "papyrusmaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "toys",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "yoyo",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "puppeteering",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "fighting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "defensivefighting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "normalfighting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "weaponlessfighting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "aggressivefighting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shieldbashing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "taunting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "miscellaneousitems",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shovel",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "rake",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "saw",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "pickaxe",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "repairing",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "sickle",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "scythe",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hammer",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "stonechisel",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "alchemy",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "naturalsubstances",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shields",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mediummetalshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "smallwoodenshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "smallmetalshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "largemetalshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mediumwoodenshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "largewoodenshield",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "axes",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hatchet",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "smallaxe",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "largeaxe",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "hugeaxe",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "swords",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "longsword",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shortsword",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "twohandedsword",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "knives",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "carvingknife",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "butcheringknife",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "woodcutting",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mauls",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mediummaul",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "smallmaul",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "largemaul",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "carpentry",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "bowyery",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "fletching",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "finecarpentry",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "toymaking",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "shipbuilding",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mind",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mindlogic",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "mindspeed",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "soul",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "souldepth",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "soulstrength",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "body",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "bodystrength",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "bodystamina",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "bodycontrol",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "faith",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "favor",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    },
+    {
+      "fieldName": "alignment",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "1.0"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Skills",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

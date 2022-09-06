@@ -1,0 +1,213 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName verasm
+    blueprints []
+    buildTool maven
+    cacheProvider ehcache
+    clientFramework react
+    clientPackageManager npm
+    clientTheme none
+    creationTimestamp 1662470040313
+    databaseType sql
+    devDatabaseType postgresql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen true
+    enableTranslation true
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jhipsterVersion "7.9.3"
+    jwtSecretKey "YjJhMzBlY2U0M2ZlZDVlYjk0ODg5MzUzNDM4YzY5OTc3Mzg2OWMwMmZlY2RiNWJiNTJlOTliOWE2ZDZlMzlhMGVkNGM1NjMwOTIyZjI3NTUxNDBmMWYzYzY0M2ZiOTBiY2E4MTExMzg5ZmZiZDAwNDkwZDNjODQ5ZmUxMzIwNWQ="
+    languages [en, fr, de, hi, it, ja, ko, ru, es]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName net.northern.verasm
+    prodDatabaseType postgresql
+    reactive false
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType no
+    skipClient false
+    skipUserManagement false
+    testFrameworks [cypress]
+    websocket false
+    withAdminUi true
+  }
+  entities *
+}
+
+
+
+
+entity Skills{
+    dumptime String required unique
+    playername String required
+    premium String required
+    server String required
+    religion Double required min(1.0)  max(100.0)
+    prayer Double required min(1.0)  max(100.0)
+    channeling Double required min(1.0)  max(100.0)
+    preaching Double required min(1.0)  max(100.0)
+    exorcism Double required min(1.0)  max(100.0)
+    hammers Double required min(1.0)  max(100.0)
+    warhammer Double required min(1.0)  max(100.0)
+    healing Double required min(1.0)  max(100.0)
+    firstaid Double required min(1.0)  max(100.0)
+    clubs Double required min(1.0)  max(100.0)
+    hugeclub Double required min(1.0)  max(100.0)
+    archery Double required min(1.0)  max(100.0)
+    shortbow Double required min(1.0)  max(100.0)
+    mediumbow Double required min(1.0)  max(100.0)
+    longbow Double required min(1.0)  max(100.0)
+    thievery Double required min(1.0)  max(100.0)
+    stealing Double required min(1.0)  max(100.0)
+    lockpicking Double required min(1.0)  max(100.0)
+    traps Double required min(1.0)  max(100.0)
+    warmachines Double required min(1.0)  max(100.0)
+    catapults Double required min(1.0)  max(100.0)
+    trebuchets Double required min(1.0)  max(100.0)
+    ballistae Double required min(1.0)  max(100.0)
+    polearms Double required min(1.0)  max(100.0)
+    staff Double required min(1.0)  max(100.0)
+    longspear Double required min(1.0)  max(100.0)
+    halberd Double required min(1.0)  max(100.0)
+    prospecting Double required min(1.0)  max(100.0)
+    coalmaking Double required min(1.0)  max(100.0)
+    milling Double required min(1.0)  max(100.0)
+    tracking Double required min(1.0)  max(100.0)
+    paving Double required min(1.0)  max(100.0)
+    archaeology Double required min(1.0)  max(100.0)
+    restoration Double required min(1.0)  max(100.0)
+    climbing Double required min(1.0)  max(100.0)
+    thatching Double required min(1.0)  max(100.0)
+    firemaking Double required min(1.0)  max(100.0)
+    pottery Double required min(1.0)  max(100.0)
+    mining Double required min(1.0)  max(100.0)
+    digging Double required min(1.0)  max(100.0)
+    ropemaking Double required min(1.0)  max(100.0)
+    smithing Double required min(1.0)  max(100.0)
+    blacksmithing Double required min(1.0)  max(100.0)
+    locksmithing Double required min(1.0)  max(100.0)
+    jewelrysmithing Double required min(1.0)  max(100.0)
+    metallurgy Double required min(1.0)  max(100.0)
+    weaponsmithing Double required min(1.0)  max(100.0)
+    bladessmithing Double required min(1.0)  max(100.0)
+    weaponheadssmithing Double required min(1.0)  max(100.0)
+    armoursmithing Double required min(1.0)  max(100.0)
+    shieldsmithing Double required min(1.0)  max(100.0)
+    chainarmoursmithing Double required min(1.0)  max(100.0)
+    platearmoursmithing Double required min(1.0)  max(100.0)
+    tailoring Double required min(1.0)  max(100.0)
+    clothtailoring Double required min(1.0)  max(100.0)
+    leatherworking Double required min(1.0)  max(100.0)
+    masonry Double required min(1.0)  max(100.0)
+    stonecutting Double required min(1.0)  max(100.0)
+    cooking Double required min(1.0)  max(100.0)
+    hotfoodcooking Double required min(1.0)  max(100.0)
+    baking Double required min(1.0)  max(100.0)
+    dairyfoodmaking Double required min(1.0)  max(100.0)
+    butchering Double required min(1.0)  max(100.0)
+    beverages Double required min(1.0)  max(100.0)
+    nature Double required min(1.0)  max(100.0)
+    fishing Double required min(1.0)  max(100.0)
+    gardening Double required min(1.0)  max(100.0)
+    foraging Double required min(1.0)  max(100.0)
+    botanizing Double required min(1.0)  max(100.0)
+    animaltaming Double required min(1.0)  max(100.0)
+    forestry Double required min(1.0)  max(100.0)
+    farming Double required min(1.0)  max(100.0)
+    milking Double required min(1.0)  max(100.0)
+    meditating Double required min(1.0)  max(100.0)
+    animalhusbandry Double required min(1.0)  max(100.0)
+    papyrusmaking Double required min(1.0)  max(100.0)
+    toys Double required min(1.0)  max(100.0)
+    yoyo Double required min(1.0)  max(100.0)
+    puppeteering Double required min(1.0)  max(100.0)
+    fighting Double required min(1.0)  max(100.0)
+    defensivefighting Double required min(1.0)  max(100.0)
+    normalfighting Double required min(1.0)  max(100.0)
+    weaponlessfighting Double required min(1.0)  max(100.0)
+    aggressivefighting Double required min(1.0)  max(100.0)
+    shieldbashing Double required min(1.0)  max(100.0)
+    taunting Double required min(1.0)  max(100.0)
+    miscellaneousitems Double required min(1.0)  max(100.0)
+    shovel Double required min(1.0)  max(100.0)
+    rake Double required min(1.0)  max(100.0)
+    saw Double required min(1.0)  max(100.0)
+    pickaxe Double required min(1.0)  max(100.0)
+    repairing Double required min(1.0)  max(100.0)
+    sickle Double required min(1.0)  max(100.0)
+    scythe Double required min(1.0)  max(100.0)
+    hammer Double required min(1.0)  max(100.0)
+    stonechisel Double required min(1.0)  max(100.0)
+    alchemy Double required min(1.0)  max(100.0)
+    naturalsubstances Double required min(1.0)  max(100.0)
+    shields Double required min(1.0)  max(100.0)
+    mediummetalshield Double required min(1.0)  max(100.0)
+    smallwoodenshield Double required min(1.0)  max(100.0)
+    smallmetalshield Double required min(1.0)  max(100.0)
+    largemetalshield Double required min(1.0)  max(100.0)
+    mediumwoodenshield Double required min(1.0)  max(100.0)
+    largewoodenshield Double required min(1.0)  max(100.0)
+    axes Double required min(1.0)  max(100.0)
+    hatchet Double required min(1.0)  max(100.0)
+    smallaxe Double required min(1.0)  max(100.0)
+    largeaxe Double required min(1.0)  max(100.0)
+    hugeaxe Double required min(1.0)  max(100.0)
+    swords Double required min(1.0)  max(100.0)
+    longsword Double required min(1.0)  max(100.0)
+    shortsword Double required min(1.0)  max(100.0)
+    twohandedsword Double required min(1.0)  max(100.0)
+    knives Double required min(1.0)  max(100.0)
+    carvingknife Double required min(1.0)  max(100.0)
+    butcheringknife Double required min(1.0)  max(100.0)
+    woodcutting Double required min(1.0)  max(100.0)
+    mauls Double required min(1.0)  max(100.0)
+    mediummaul Double required min(1.0)  max(100.0)
+    smallmaul Double required min(1.0)  max(100.0)
+    largemaul Double required min(1.0)  max(100.0)
+    carpentry Double required min(1.0)  max(100.0)
+    bowyery Double required min(1.0)  max(100.0)
+    fletching Double required min(1.0)  max(100.0)
+    finecarpentry Double required min(1.0)  max(100.0)
+    toymaking Double required min(1.0)  max(100.0)
+    shipbuilding Double required min(1.0)  max(100.0)
+    mind Double required min(1.0)  max(100.0)
+    mindlogic Double required min(1.0)  max(100.0)
+    mindspeed Double required min(1.0)  max(100.0)
+    soul Double required min(1.0)  max(100.0)
+    souldepth Double required min(1.0)  max(100.0)
+    soulstrength Double required min(1.0)  max(100.0)
+    body Double required min(1.0)  max(100.0)
+    bodystrength Double required min(1.0)  max(100.0)
+    bodystamina Double required min(1.0)  max(100.0)
+    bodycontrol Double required min(1.0)  max(100.0)
+    faith Double required min(1.0)  max(100.0)
+    favor Double required min(1.0)  max(100.0)
+    alignment Double required min(1.0)  max(100.0)
+}
+
+entity ApplicationUser {
+  mainUsername String
+}
+
+relationship OneToOne {
+  ApplicationUser{internalUser} to User
+}
+
+relationship ManyToOne {
+  Skills{user(login)} to User
+}
+
+
+service ApplicationUser, Skills with serviceClass
+service ApplicationUser, Skills with serviceImpl
+paginate ApplicationUser, Skills with infinite-scroll
+dto ApplicationUser, Skills with mapstruct
+
