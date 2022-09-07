@@ -16,6 +16,10 @@ We will slowly add features, etc...
 - JDK v11 or greater, any openJDK will work, official JDK not req.
 - NodeJS v16 or greater w/ NPM
 
+## For Contributing:
+
+See CONTRIBUTING.md
+
 ## Project Structure
 
 Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
