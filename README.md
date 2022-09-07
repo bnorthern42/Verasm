@@ -2,6 +2,20 @@
 
 This application was generated using JHipster 7.9.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.3](https://www.jhipster.tech/documentation-archive/v7.9.3).
 
+Due to Niarja Shutting down, this aims to be an updated remake of that system.
+First I plan to implement the skills upload and viewing (all public atm).
+We will slowly add features, etc...
+
+## Initial Reqs / notes:
+
+- PostgreSQL (Tested using v14)
+  - Make user with name : verasm
+  - add pass with name : verasm or something
+    - See src/main/resources/config/application-dev.yml for settings
+  - create DB with name verasm
+- JDK v11 or greater, any openJDK will work, official JDK not req.
+- NodeJS v16 or greater w/ NPM
+
 ## Project Structure
 
 Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
