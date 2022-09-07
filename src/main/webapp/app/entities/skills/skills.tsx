@@ -12,7 +12,7 @@ import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { ISkills } from 'app/shared/model/skills.model';
 import { getEntities, reset } from './skills.reducer';
-
+import './skills.css';
 export const Skills = () => {
   const dispatch = useAppDispatch();
 
@@ -761,6 +761,25 @@ export const Skills = () => {
             )
           )}
         </InfiniteScroll>
+      </div>
+
+      <div className="main-wrapper">
+        <div className="statistics-wrapper">
+          <div className="statistics"> quick stats</div>
+          <div className="graph"> graph</div>
+        </div>
+
+        <div className="skill-section-container">
+          <div className="skill-group">
+            <b>Body</b>
+            <br></br>
+            <ul>
+              <li className="a-skill">BOdy Strength: 99.999</li>
+              <li className="a-skill">BOdy Strength: 99.999</li>
+              <li className="a-skill">BOdy Strength: 99.999</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

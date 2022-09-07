@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="73.120367"
+       y="22.086025"
+       width="653.08088"
+       height="27.728344"
+       id="rect1248" />
+    <rect
+       x="259.01942"
+       y="105.36521"
+       width="9.1514989"
+       height="75.869577"
+       id="rect605" />
+    <rect
+       x="78.913764"
+       y="106.60727"
+       width="121.0577"
+       height="152.31119"
+       id="rect326" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect270"
+       width="41.257042"
+       height="57.312347"
+       x="16.102667"
+       y="17.329121" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text324"
+       style="fill:#99ff55;white-space:pre;shape-inside:url(#rect326)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#000000;stroke-width:0.264583"
+       x="23.740217"
+       y="35.190411"
+       id="text332"><tspan
+         id="tspan330"
+         style="stroke-width:0.264583;fill:#000000"
+         x="23.740217"
+         y="35.190411" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;fill:#000000;stroke-width:0.264583"
+       x="21.044331"
+       y="29.744871"
+       id="text388"><tspan
+         id="tspan386"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="29.744871">quick stats</tspan><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="35.918484"
+         id="tspan663">like pts/hour </tspan><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="42.092094"
+         id="tspan665">pts/day, </tspan><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="48.265709"
+         id="tspan988">pts gained:</tspan><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="54.43932"
+         id="tspan992">last N days</tspan><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="21.044331"
+         y="60.612934"
+         id="tspan994">(dropdown).</tspan></text>
+    <rect
+       style="fill:#cccccc;stroke-width:0.264583"
+       id="rect445"
+       width="141.74971"
+       height="56.670902"
+       x="60.639149"
+       y="18.047695" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text603"
+       style="white-space:pre;shape-inside:url(#rect605);fill:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;fill:#000000;stroke-width:0.264583"
+       x="75.986107"
+       y="40.41716"
+       id="text661"><tspan
+         id="tspan659"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="75.986107"
+         y="40.41716">Graph of progress</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671"
+       width="41.76823"
+       height="53.515282"
+       x="14.564837"
+       y="81.961304" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="24.3703"
+       y="102.18263"
+       id="text675"><tspan
+         id="tspan673"
+         style="stroke-width:0.264583;fill:#000000"
+         x="24.3703"
+         y="102.18263" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="22.18372"
+       y="96.346466"
+       id="text787"><tspan
+         id="tspan785"
+         style="stroke-width:0.264583"
+         x="22.18372"
+         y="96.346466">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="22.18372"
+         y="102.52009"
+         id="tspan789">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-3"
+       width="41.76823"
+       height="53.515282"
+       x="59.441799"
+       y="81.978096" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="67.060684"
+       y="96.363266"
+       id="text787-6"><tspan
+         id="tspan785-7"
+         style="stroke-width:0.264583"
+         x="67.060684"
+         y="96.363266">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="67.060684"
+         y="102.53689"
+         id="tspan789-5">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-35"
+       width="41.76823"
+       height="53.515282"
+       x="105.04031"
+       y="82.417244" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="112.65919"
+       y="96.802406"
+       id="text787-62"><tspan
+         id="tspan785-9"
+         style="stroke-width:0.264583"
+         x="112.65919"
+         y="96.802406">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="112.65919"
+         y="102.97603"
+         id="tspan789-1">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-2"
+       width="41.76823"
+       height="53.515282"
+       x="151.73196"
+       y="82.591225" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="159.35085"
+       y="96.976387"
+       id="text787-7"><tspan
+         id="tspan785-0"
+         style="stroke-width:0.264583"
+         x="159.35085"
+         y="96.976387">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="159.35085"
+         y="103.15001"
+         id="tspan789-9">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-36"
+       width="41.76823"
+       height="53.515282"
+       x="14.542694"
+       y="141.14482" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="22.161575"
+       y="155.52998"
+       id="text787-0"><tspan
+         id="tspan785-6"
+         style="stroke-width:0.264583"
+         x="22.161575"
+         y="155.52998">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="22.161575"
+         y="161.70361"
+         id="tspan789-2">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-6"
+       width="41.76823"
+       height="53.515282"
+       x="61.394497"
+       y="140.25211" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="69.013382"
+       y="154.63727"
+       id="text787-1"><tspan
+         id="tspan785-8"
+         style="stroke-width:0.264583"
+         x="69.013382"
+         y="154.63727">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.013382"
+         y="160.8109"
+         id="tspan789-7">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-9"
+       width="41.76823"
+       height="53.515282"
+       x="107.67353"
+       y="140.66362" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="115.29241"
+       y="155.04878"
+       id="text787-2"><tspan
+         id="tspan785-02"
+         style="stroke-width:0.264583"
+         x="115.29241"
+         y="155.04878">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="115.29241"
+         y="161.22241"
+         id="tspan789-3">react card</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect671-7"
+       width="41.76823"
+       height="53.515282"
+       x="153.99504"
+       y="140.71458" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="161.61392"
+       y="155.09975"
+       id="text787-5"><tspan
+         id="tspan785-92"
+         style="stroke-width:0.264583"
+         x="161.61392"
+         y="155.09975">skill group</tspan><tspan
+         style="stroke-width:0.264583"
+         x="161.61392"
+         y="161.27338"
+         id="tspan789-28">react card</tspan></text>
+    <rect
+       style="fill:#cccccc;stroke-width:0.264583"
+       id="rect1048"
+       width="46.565235"
+       height="68.880386"
+       x="13.227026"
+       y="207.05061" />
+    <rect
+       style="fill:#cccccc;stroke-width:0.264583"
+       id="rect1050"
+       width="6.3560381"
+       height="14.757113"
+       x="42.23296"
+       y="236.78046" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="18.453735"
+       y="217.74701"
+       id="text1106"><tspan
+         id="tspan1104"
+         style="stroke-width:0.264583"
+         x="18.453735"
+         y="217.74701">top 10 skills</tspan></text>
+    <rect
+       style="fill:#999999;stroke-width:0.264583"
+       id="rect1111"
+       width="129.48289"
+       height="62.007462"
+       x="66.104225"
+       y="210.5457" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="74.902153"
+       y="220.64317"
+       id="text1167"><tspan
+         id="tspan1165"
+         style="stroke-width:0.264583;fill:#000000"
+         x="74.902153"
+         y="220.64317" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;fill:#000000;stroke-width:0.264583"
+       x="69.201813"
+       y="220.69273"
+       id="text1234"><tspan
+         id="tspan1232"
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="220.69273">player bio: </tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="226.86636"
+         id="tspan1236">playtime in days</tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="233.03998"
+         id="tspan1238">total pts gained</tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="239.21361"
+         id="tspan1240">server with most dumps from</tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="245.38724"
+         id="tspan1242">server group (NFI/EPIC/SFI etc...)</tspan><tspan
+         style="stroke-width:0.264583"
+         x="69.201813"
+         y="251.56085"
+         id="tspan1244">etc...</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1246"
+       style="font-size:18.6667px;white-space:pre;shape-inside:url(#rect1248);fill:#999999"><tspan
+         x="73.121094"
+         y="39.070305"
+         id="tspan1392">Nav bar - toons account controls : toon 1, toon 2, toon 3, etc</tspan></text>
+  </g>
+</svg>
