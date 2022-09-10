@@ -195,15 +195,18 @@ entity Skills{
 
 entity ApplicationUser {
   mainUsername String
+  isSkillsPrivate Boolean
 }
 
 relationship OneToOne {
   ApplicationUser{internalUser} to User
+
 }
 
 relationship ManyToOne {
   Skills{user(login)} to User
 }
+
 
 
 service ApplicationUser, Skills with serviceClass

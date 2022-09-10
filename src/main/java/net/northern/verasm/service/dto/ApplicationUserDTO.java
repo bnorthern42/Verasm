@@ -13,6 +13,8 @@ public class ApplicationUserDTO implements Serializable {
 
     private String mainUsername;
 
+    private Boolean isSkillsPrivate;
+
     private UserDTO internalUser;
 
     public Long getId() {
@@ -29,6 +31,14 @@ public class ApplicationUserDTO implements Serializable {
 
     public void setMainUsername(String mainUsername) {
         this.mainUsername = mainUsername;
+    }
+
+    public Boolean getIsSkillsPrivate() {
+        return isSkillsPrivate;
+    }
+
+    public void setIsSkillsPrivate(Boolean isSkillsPrivate) {
+        this.isSkillsPrivate = isSkillsPrivate;
     }
 
     public UserDTO getInternalUser() {
@@ -66,6 +76,7 @@ public class ApplicationUserDTO implements Serializable {
         return "ApplicationUserDTO{" +
             "id=" + getId() +
             ", mainUsername='" + getMainUsername() + "'" +
+            ", isSkillsPrivate='" + getIsSkillsPrivate() + "'" +
             ", internalUser=" + getInternalUser() +
             "}";
     }

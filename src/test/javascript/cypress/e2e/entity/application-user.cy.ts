@@ -164,6 +164,9 @@ describe('ApplicationUser e2e test', () => {
     it('should create an instance of ApplicationUser', () => {
       cy.get(`[data-cy="mainUsername"]`).type('Poland').should('have.value', 'Poland');
 
+      cy.get(`[data-cy="isSkillsPrivate"]`).should('not.be.checked');
+      cy.get(`[data-cy="isSkillsPrivate"]`).click().should('be.checked');
+
       cy.get(entityCreateSaveButtonSelector).click();
 
       cy.wait('@postEntityRequest').then(({ response }) => {

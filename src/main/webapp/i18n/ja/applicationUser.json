@@ -19,6 +19,7 @@
       },
       "id": "ID",
       "mainUsername": "Main Username",
+      "isSkillsPrivate": "Is Skills Private",
       "internalUser": "Internal User"
     }
   }

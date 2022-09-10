@@ -128,6 +128,10 @@ export const ApplicationUser = () => {
                   <th className="hand" onClick={sort('mainUsername')}>
                     <Translate contentKey="verasmApp.applicationUser.mainUsername">Main Username</Translate> <FontAwesomeIcon icon="sort" />
                   </th>
+                  <th className="hand" onClick={sort('isSkillsPrivate')}>
+                    <Translate contentKey="verasmApp.applicationUser.isSkillsPrivate">Is Skills Private</Translate>{' '}
+                    <FontAwesomeIcon icon="sort" />
+                  </th>
                   <th>
                     <Translate contentKey="verasmApp.applicationUser.internalUser">Internal User</Translate> <FontAwesomeIcon icon="sort" />
                   </th>
@@ -143,6 +147,7 @@ export const ApplicationUser = () => {
                       </Button>
                     </td>
                     <td>{applicationUser.mainUsername}</td>
+                    <td>{applicationUser.isSkillsPrivate ? 'true' : 'false'}</td>
                     <td>{applicationUser.internalUser ? applicationUser.internalUser.id : ''}</td>
                     <td className="text-end">
                       <div className="btn-group flex-btn-group-container">

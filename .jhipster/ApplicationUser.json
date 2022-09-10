@@ -8,6 +8,10 @@
     {
       "fieldName": "mainUsername",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "isSkillsPrivate",
+      "fieldType": "Boolean"
     }
   ],
   "fluentMethods": true,
