@@ -3,6 +3,7 @@ package net.northern.verasm.repository;
 import java.util.List;
 import java.util.Optional;
 import net.northern.verasm.domain.Skills;
+import net.northern.verasm.service.dto.SkillsDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.*;
@@ -40,4 +41,6 @@ public interface SkillsRepository extends JpaRepository<Skills, Long> {
 
     @Query("select skills from Skills skills left join fetch skills.user where skills.id =:id")
     Optional<Skills> findOneWithToOneRelationships(@Param("id") Long id);
+
+    Optional<Skills> findAllByUserId(Long userId);
 }

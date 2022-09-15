@@ -57,6 +57,8 @@ public interface SkillsService {
      */
     Optional<SkillsDTO> findOne(Long id);
 
+    Optional<SkillsDTO> findAllByUserId(Long UserId);
+
     /**
      * Delete the "id" skills.
      *

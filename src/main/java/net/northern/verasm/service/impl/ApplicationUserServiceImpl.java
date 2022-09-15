@@ -81,4 +81,11 @@ public class ApplicationUserServiceImpl implements ApplicationUserService {
         log.debug("Request to delete ApplicationUser : {}", id);
         applicationUserRepository.deleteById(id);
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Optional<ApplicationUserDTO> findByMainUsername(String MainUsername) {
+        log.debug("Request to get ApplicationUser: {}", MainUsername);
+        return applicationUserRepository.findByMainUsername(MainUsername).map(applicationUserMapper::toDto);
+    }
 }
