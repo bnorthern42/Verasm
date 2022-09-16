@@ -1,0 +1,149 @@
+Skills dumped at Sep 13, 2022
+Player: polarbear
+Premium: Yes
+Server: Chaos
+-----
+Skills: 0.0 0.0 0
+   Religion: 15.096829 15.096829 0
+      Prayer: 26.718864 26.718864 1
+      Channeling: 15.632578 15.548126 0
+      Preaching: 4.8807893 4.8807893 0
+      Exorcism: 3.0 3.0 0
+   Hammers: 1.8886222 1.7904125 0
+      Warhammer: 3.363366 3.363366 0
+   Healing: 19.597923 19.597923 0
+      First aid: 37.32417 37.32417 1
+   Clubs: 1.6257372 1.6257372 0
+      Huge club: 1.2974513 1.0 0
+   Archery: 39.429337 39.429337 0
+      Short bow: 27.954315 27.954315 0
+      Medium bow: 2.7806752 2.7806752 0
+      Long bow: 2.6847806 2.6847806 0
+   Thievery: 4.479298 4.479298 0
+      Stealing: 1.7715851 1.7715851 1
+      Lock picking: 7.4807773 7.4807773 0
+      Traps: 1.0 1.0 1
+   War machines: 11.339811 11.339811 0
+      Catapults: 19.031673 19.031673 0
+      Trebuchets: 5.5967765 5.5967765 0
+      Ballistae: 1.0 1.0 0
+   Polearms: 9.620565 9.620565 0
+      Staff: 6.647919 6.647919 0
+      Long spear: 1.0 1.0 0
+      Halberd: 14.378921 14.378921 0
+   Prospecting: 27.607132 27.607132 0
+   Coal-making: 42.754482 42.754482 0
+   Milling: 50.391136 50.391136 0
+   Tracking: 5.2281594 5.2281594 0
+   Paving: 49.44909 49.44909 0
+   Archaeology: 32.26648 32.26648 0
+      Restoration: 32.966194 32.966194 2
+   Climbing: 22.531918 22.531918 1
+   Thatching: 28.740814 28.740814 0
+   Firemaking: 24.542688 24.542688 1
+   Pottery: 31.68669 31.68669 0
+   Mining: 87.469864 87.469864 1
+   Digging: 93.78758 93.78758 1
+   Ropemaking: 50.093353 50.093353 0
+   Smithing: 52.42797 52.42797 0
+      Blacksmithing: 81.28516 81.28516 0
+      Locksmithing: 61.69665 61.69665 0
+      Jewelry smithing: 32.22898 32.22898 0
+      Metallurgy: 27.424515 27.424515 1
+      Weapon smithing: 8.609191 8.609191 0
+         Blades smithing: 12.481008 12.481008 0
+         Weapon heads smithing: 11.074537 11.074537 0
+      Armour smithing: 25.399572 25.399572 0
+         Shield smithing: 55.49293 55.49293 0
+         Chain armour smithing: 45.027992 45.027992 0
+         Plate armour smithing: 24.398136 24.398136 0
+   Tailoring: 31.974648 31.974648 1
+      Cloth tailoring: 51.446125 51.446125 0
+      Leatherworking: 50.45449 50.45449 0
+   Masonry: 80.76127 80.76127 0
+      Stone cutting: 78.53415 78.53415 0
+   Cooking: 45.508778 45.508778 0
+      Hot food cooking: 71.28611 71.28611 1
+      Baking: 22.658558 22.658558 1
+      Dairy food making: 12.673557 12.673557 1
+      Butchering: 30.125242 30.125242 0
+      Beverages: 24.134039 24.134039 0
+   Nature: 49.179497 49.179497 0
+      Fishing: 4.815735 4.815735 0
+      Gardening: 51.59157 51.59157 0
+      Foraging: 23.253529 23.253529 0
+      Botanizing: 20.32371 20.32371 0
+      Animal taming: 70.979416 70.979416 0
+      Forestry: 42.243793 42.243793 0
+      Farming: 53.566315 53.566315 0
+      Milking: 12.260957 12.260957 0
+      Meditating: 57.364445 57.364445 1
+      Animal husbandry: 24.043932 24.043932 0
+      Papyrusmaking: 7.9852934 7.9852934 1
+   Toys: 2.2466583 2.2466583 1
+      Yoyo: 2.8013124 2.8013124 0
+      Puppeteering: 4.045925 4.045925 0
+   Fighting: 79.662025 79.662025 0
+      Defensive fighting: 51.65771 51.65771 0
+      Normal fighting: 46.82836 46.82836 0
+      Weaponless fighting: 6.078732 5.9879127 0
+      Aggressive fighting: 52.303215 52.303215 0
+      Shield bashing: 8.630415 8.630415 0
+      Taunting: 2.6104198 2.6104198 0
+   Miscellaneous items: 74.86932 74.86932 0
+      Shovel: 79.771706 79.771706 0
+      Rake: 39.486412 39.486412 0
+      Saw: 22.960205 22.960205 0
+      Pickaxe: 89.69897 89.69897 0
+      Repairing: 54.29231 54.29231 0
+      Sickle: 39.376007 39.376007 0
+      Scythe: 7.9300785 7.9300785 0
+      Hammer: 60.987686 60.987686 1
+      Stone chisel: 62.377247 62.377247 0
+   Alchemy: 21.4003 21.4003 0
+      Natural substances: 42.571514 42.571514 0
+   Shields: 59.550682 59.550682 0
+      Medium metal shield: 3.5118155 3.5118155 0
+      Small wooden shield: 1.4033178 1.4033178 0
+      Small metal shield: 14.308223 14.308223 0
+      Large metal shield: 75.74641 75.74641 0
+      Medium wooden shield: 1.2247491 1.2247491 0
+      Large wooden shield: 1.0 1.0 0
+   Axes: 49.090313 49.090313 0
+      Hatchet: 53.433052 53.433052 0
+      Small Axe: 1.0 1.0 0
+      Large axe: 1.0 1.0 0
+      Huge axe: 42.948975 42.948975 1
+   Swords: 37.022987 37.022987 0
+      Longsword: 65.85077 65.85077 0
+      Shortsword: 1.0 1.0 0
+      Two handed sword: 57.08517 57.08517 0
+   Knives: 28.050058 28.050058 0
+      Carving knife: 37.578236 37.578236 1
+      Butchering knife: 32.622787 32.622787 0
+   Woodcutting: 60.0037 60.0037 0
+   Mauls: 10.420136 10.420136 1
+      Medium maul: 4.102981 4.102981 0
+      Small maul: 23.495718 23.495718 0
+      Large maul: 5.02132 5.02132 0
+   Carpentry: 72.19307 72.19307 0
+      Bowyery: 23.181503 23.181503 0
+      Fletching: 23.83168 23.83168 0
+      Fine carpentry: 43.013557 43.013557 0
+      Toy making: 1.73896 1.73896 0
+      Ship building: 51.801434 51.801434 0
+Characteristics: 0.0 0.0 0
+   Mind: 44.067184 44.067184 0
+      Mind logic: 50.465103 50.465103 1
+      Mind speed: 24.873314 24.873314 0
+   Soul: 38.38856 38.38856 1
+      Soul depth: 30.143242 30.143242 0
+      Soul strength: 40.165554 40.165554 0
+   Body: 52.05973 52.05973 0
+      Body strength: 48.126457 48.126457 0
+      Body stamina: 41.75477 41.75477 0
+      Body control: 38.609657 38.609657 0
+Religion: 0.0 0.0 0
+   Faith: 26.7305 26.7305 0
+   Favor: 26.7305 26.7305 0
+   Alignment: 100.0 100.0 0

@@ -15,6 +15,8 @@ import net.northern.verasm.service.SkillsService;
 import net.northern.verasm.service.UserService;
 import net.northern.verasm.service.dto.ApplicationUserDTO;
 import net.northern.verasm.service.dto.SkillsDTO;
+import net.northern.verasm.service.dto.UserDTO;
+import net.northern.verasm.web.rest.Utils.SkillDumpParser;
 import net.northern.verasm.web.rest.errors.BadRequestAlertException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +26,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import tech.jhipster.web.util.HeaderUtil;
 import tech.jhipster.web.util.PaginationUtil;
@@ -85,6 +88,30 @@ public class SkillsResource {
             throw new BadRequestAlertException("A new skills cannot already have an ID", ENTITY_NAME, "idexists");
         }
         SkillsDTO result = skillsService.save(skillsDTO);
+        return ResponseEntity
+            .created(new URI("/api/skills/" + result.getId()))
+            .headers(HeaderUtil.createEntityCreationAlert(applicationName, true, ENTITY_NAME, result.getId().toString()))
+            .body(result);
+    }
+
+    /**
+     * {@code POST  /skills} : Create a new skills with dump file
+     *
+     * @param file the associated skills dump the user wishes to upload
+     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new skillsDTO, or with status {@code 400 (Bad Request)} if the skills has already an ID.
+     * @throws URISyntaxException if the Location URI syntax is incorrect.
+     */
+    @PostMapping("/skills-dump")
+    public ResponseEntity<SkillsDTO> createSkillsFromDump(@RequestParam("file") MultipartFile file) throws URISyntaxException {
+        SkillDumpParser skillDumpParser = new SkillDumpParser(file);
+
+        log.info("in dump parser- rest");
+        log.debug("REST request to save Skills : {}", file.getOriginalFilename());
+        SkillsDTO parsed = skillDumpParser.parseData();
+        UserDTO userDTO = new UserDTO(userService.getUserWithAuthorities().get());
+        parsed.setUser(userDTO);
+        SkillsDTO result = skillsService.save(parsed);
+        log.info("Result of save: {}", result.toString());
         return ResponseEntity
             .created(new URI("/api/skills/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(applicationName, true, ENTITY_NAME, result.getId().toString()))

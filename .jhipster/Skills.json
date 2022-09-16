@@ -1,6 +1,6 @@
 {
   "applications": ["verasm"],
-  "changelogDate": "20220906131500",
+  "changelogDate": "20220915133856",
   "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "skills",
