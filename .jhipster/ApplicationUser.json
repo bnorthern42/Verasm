@@ -1,6 +1,6 @@
 {
   "applications": ["verasm"],
-  "changelogDate": "20220906131600",
+  "changelogDate": "20220915133857",
   "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "application_user",
@@ -8,6 +8,10 @@
     {
       "fieldName": "mainUsername",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "isSkillsPrivate",
+      "fieldType": "Boolean"
     }
   ],
   "fluentMethods": true,

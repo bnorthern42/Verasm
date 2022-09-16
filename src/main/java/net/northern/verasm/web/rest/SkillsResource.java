@@ -7,9 +7,16 @@ import java.util.Objects;
 import java.util.Optional;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import net.northern.verasm.repository.ApplicationUserRepository;
 import net.northern.verasm.repository.SkillsRepository;
+import net.northern.verasm.repository.UserRepository;
+import net.northern.verasm.service.ApplicationUserService;
 import net.northern.verasm.service.SkillsService;
+import net.northern.verasm.service.UserService;
+import net.northern.verasm.service.dto.ApplicationUserDTO;
 import net.northern.verasm.service.dto.SkillsDTO;
+import net.northern.verasm.service.dto.UserDTO;
+import net.northern.verasm.web.rest.Utils.SkillDumpParser;
 import net.northern.verasm.web.rest.errors.BadRequestAlertException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,9 +24,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import tech.jhipster.web.util.HeaderUtil;
 import tech.jhipster.web.util.PaginationUtil;
@@ -43,9 +50,28 @@ public class SkillsResource {
 
     private final SkillsRepository skillsRepository;
 
-    public SkillsResource(SkillsService skillsService, SkillsRepository skillsRepository) {
+    private final ApplicationUserService applicationUserService;
+
+    private final ApplicationUserRepository applicationUserRepository;
+
+    private final UserService userService;
+
+    private final UserRepository userRepository;
+
+    public SkillsResource(
+        SkillsService skillsService,
+        SkillsRepository skillsRepository,
+        ApplicationUserService applicationUserService,
+        ApplicationUserRepository applicationUserRepository,
+        UserService userService,
+        UserRepository userRepository
+    ) {
         this.skillsService = skillsService;
         this.skillsRepository = skillsRepository;
+        this.applicationUserService = applicationUserService;
+        this.applicationUserRepository = applicationUserRepository;
+        this.userService = userService;
+        this.userRepository = userRepository;
     }
 
     /**
@@ -62,6 +88,30 @@ public class SkillsResource {
             throw new BadRequestAlertException("A new skills cannot already have an ID", ENTITY_NAME, "idexists");
         }
         SkillsDTO result = skillsService.save(skillsDTO);
+        return ResponseEntity
+            .created(new URI("/api/skills/" + result.getId()))
+            .headers(HeaderUtil.createEntityCreationAlert(applicationName, true, ENTITY_NAME, result.getId().toString()))
+            .body(result);
+    }
+
+    /**
+     * {@code POST  /skills} : Create a new skills with dump file
+     *
+     * @param file the associated skills dump the user wishes to upload
+     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new skillsDTO, or with status {@code 400 (Bad Request)} if the skills has already an ID.
+     * @throws URISyntaxException if the Location URI syntax is incorrect.
+     */
+    @PostMapping("/skills-dump")
+    public ResponseEntity<SkillsDTO> createSkillsFromDump(@RequestParam("file") MultipartFile file) throws URISyntaxException {
+        SkillDumpParser skillDumpParser = new SkillDumpParser(file);
+
+        log.info("in dump parser- rest");
+        log.debug("REST request to save Skills : {}", file.getOriginalFilename());
+        SkillsDTO parsed = skillDumpParser.parseData();
+        UserDTO userDTO = new UserDTO(userService.getUserWithAuthorities().get());
+        parsed.setUser(userDTO);
+        SkillsDTO result = skillsService.save(parsed);
+        log.info("Result of save: {}", result.toString());
         return ResponseEntity
             .created(new URI("/api/skills/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(applicationName, true, ENTITY_NAME, result.getId().toString()))
@@ -171,6 +221,33 @@ public class SkillsResource {
     public ResponseEntity<SkillsDTO> getSkills(@PathVariable Long id) {
         log.debug("REST request to get Skills : {}", id);
         Optional<SkillsDTO> skillsDTO = skillsService.findOne(id);
+        return ResponseUtil.wrapOrNotFound(skillsDTO);
+    }
+
+    /**
+     * {@code GET  /skills} : get all the skills for specific user
+     * @param characterName characterName
+     * @param pageable the pagination information.
+     * @param eagerload flag to eager load entities from relationships (This is applicable for many-to-many).
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of skills in body.
+     */
+    @GetMapping("/skills/{characterName}")
+    public ResponseEntity<SkillsDTO> getAllSkillsByUserName(
+        String characterName,
+        @org.springdoc.api.annotations.ParameterObject Pageable pageable,
+        @RequestParam(required = false, defaultValue = "false") boolean eagerload
+    ) {
+        log.debug("REST request to get a page of Skills from username");
+        Optional<ApplicationUserDTO> applicationUserDTO = applicationUserService.findByMainUsername(characterName);
+
+        Boolean isPrivate = applicationUserService.findByMainUsername(characterName).get().getIsSkillsPrivate();
+        Long LoggedInUser = userService.getUserWithAuthorities().get().getId();
+        Long CharNameIDCheck = applicationUserService.findByMainUsername(characterName).get().getInternalUser().getId();
+        //if username asscociated with account has same ID as logged in user, and private allow access,
+        //or
+        //if skill set public (private: false) then give access to character requested
+        Optional<SkillsDTO> skillsDTO = Optional.empty();
+        if (!isPrivate || LoggedInUser.equals(CharNameIDCheck)) skillsDTO = skillsService.findAllByUserId(CharNameIDCheck);
         return ResponseUtil.wrapOrNotFound(skillsDTO);
     }
 

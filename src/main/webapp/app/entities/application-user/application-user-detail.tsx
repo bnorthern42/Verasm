@@ -39,6 +39,12 @@ export const ApplicationUserDetail = () => {
           </dt>
           <dd>{applicationUserEntity.mainUsername}</dd>
           <dt>
+            <span id="isSkillsPrivate">
+              <Translate contentKey="verasmApp.applicationUser.isSkillsPrivate">Is Skills Private</Translate>
+            </span>
+          </dt>
+          <dd>{applicationUserEntity.isSkillsPrivate ? 'true' : 'false'}</dd>
+          <dt>
             <Translate contentKey="verasmApp.applicationUser.internalUser">Internal User</Translate>
           </dt>
           <dd>{applicationUserEntity.internalUser ? applicationUserEntity.internalUser.id : ''}</dd>

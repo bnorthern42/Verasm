@@ -12,7 +12,7 @@ import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { ISkills } from 'app/shared/model/skills.model';
 import { getEntities, reset } from './skills.reducer';
-import './skills.css';
+
 export const Skills = () => {
   const dispatch = useAppDispatch();
 
@@ -762,7 +762,6 @@ export const Skills = () => {
           )}
         </InfiniteScroll>
       </div>
-
       <div className="main-wrapper">
         <div className="statistics-wrapper">
           <div className="statistics"> quick stats</div>

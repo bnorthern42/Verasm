@@ -55,4 +55,11 @@ public interface ApplicationUserService {
      * @param id the id of the entity.
      */
     void delete(Long id);
+    /**
+     * Get the "MainUsername" applicationUser.
+     *
+     * @param MainUsername the MainUsername of the entity.
+     * @return the entity.
+     */
+    Optional<ApplicationUserDTO> findByMainUsername(String MainUsername);
 }

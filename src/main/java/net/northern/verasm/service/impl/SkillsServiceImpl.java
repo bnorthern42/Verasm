@@ -81,6 +81,12 @@ public class SkillsServiceImpl implements SkillsService {
     }
 
     @Override
+    public Optional<SkillsDTO> findAllByUserId(Long UserId) {
+        log.debug("Request to get Skills from UserID : {}", UserId);
+        return skillsRepository.findAllByUserId(UserId).map(skillsMapper::toDto);
+    }
+
+    @Override
     public void delete(Long id) {
         log.debug("Request to delete Skills : {}", id);
         skillsRepository.deleteById(id);

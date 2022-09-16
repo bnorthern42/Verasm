@@ -34,6 +34,9 @@ class ApplicationUserResourceIT {
     private static final String DEFAULT_MAIN_USERNAME = "AAAAAAAAAA";
     private static final String UPDATED_MAIN_USERNAME = "BBBBBBBBBB";
 
+    private static final Boolean DEFAULT_IS_SKILLS_PRIVATE = false;
+    private static final Boolean UPDATED_IS_SKILLS_PRIVATE = true;
+
     private static final String ENTITY_API_URL = "/api/application-users";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -61,7 +64,9 @@ class ApplicationUserResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static ApplicationUser createEntity(EntityManager em) {
-        ApplicationUser applicationUser = new ApplicationUser().mainUsername(DEFAULT_MAIN_USERNAME);
+        ApplicationUser applicationUser = new ApplicationUser()
+            .mainUsername(DEFAULT_MAIN_USERNAME)
+            .isSkillsPrivate(DEFAULT_IS_SKILLS_PRIVATE);
         return applicationUser;
     }
 
@@ -72,7 +77,9 @@ class ApplicationUserResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static ApplicationUser createUpdatedEntity(EntityManager em) {
-        ApplicationUser applicationUser = new ApplicationUser().mainUsername(UPDATED_MAIN_USERNAME);
+        ApplicationUser applicationUser = new ApplicationUser()
+            .mainUsername(UPDATED_MAIN_USERNAME)
+            .isSkillsPrivate(UPDATED_IS_SKILLS_PRIVATE);
         return applicationUser;
     }
 
@@ -98,6 +105,7 @@ class ApplicationUserResourceIT {
         assertThat(applicationUserList).hasSize(databaseSizeBeforeCreate + 1);
         ApplicationUser testApplicationUser = applicationUserList.get(applicationUserList.size() - 1);
         assertThat(testApplicationUser.getMainUsername()).isEqualTo(DEFAULT_MAIN_USERNAME);
+        assertThat(testApplicationUser.getIsSkillsPrivate()).isEqualTo(DEFAULT_IS_SKILLS_PRIVATE);
     }
 
     @Test
@@ -133,7 +141,8 @@ class ApplicationUserResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(applicationUser.getId().intValue())))
-            .andExpect(jsonPath("$.[*].mainUsername").value(hasItem(DEFAULT_MAIN_USERNAME)));
+            .andExpect(jsonPath("$.[*].mainUsername").value(hasItem(DEFAULT_MAIN_USERNAME)))
+            .andExpect(jsonPath("$.[*].isSkillsPrivate").value(hasItem(DEFAULT_IS_SKILLS_PRIVATE.booleanValue())));
     }
 
     @Test
@@ -148,7 +157,8 @@ class ApplicationUserResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.id").value(applicationUser.getId().intValue()))
-            .andExpect(jsonPath("$.mainUsername").value(DEFAULT_MAIN_USERNAME));
+            .andExpect(jsonPath("$.mainUsername").value(DEFAULT_MAIN_USERNAME))
+            .andExpect(jsonPath("$.isSkillsPrivate").value(DEFAULT_IS_SKILLS_PRIVATE.booleanValue()));
     }
 
     @Test
@@ -170,7 +180,7 @@ class ApplicationUserResourceIT {
         ApplicationUser updatedApplicationUser = applicationUserRepository.findById(applicationUser.getId()).get();
         // Disconnect from session so that the updates on updatedApplicationUser are not directly saved in db
         em.detach(updatedApplicationUser);
-        updatedApplicationUser.mainUsername(UPDATED_MAIN_USERNAME);
+        updatedApplicationUser.mainUsername(UPDATED_MAIN_USERNAME).isSkillsPrivate(UPDATED_IS_SKILLS_PRIVATE);
         ApplicationUserDTO applicationUserDTO = applicationUserMapper.toDto(updatedApplicationUser);
 
         restApplicationUserMockMvc
@@ -186,6 +196,7 @@ class ApplicationUserResourceIT {
         assertThat(applicationUserList).hasSize(databaseSizeBeforeUpdate);
         ApplicationUser testApplicationUser = applicationUserList.get(applicationUserList.size() - 1);
         assertThat(testApplicationUser.getMainUsername()).isEqualTo(UPDATED_MAIN_USERNAME);
+        assertThat(testApplicationUser.getIsSkillsPrivate()).isEqualTo(UPDATED_IS_SKILLS_PRIVATE);
     }
 
     @Test
@@ -267,6 +278,8 @@ class ApplicationUserResourceIT {
         ApplicationUser partialUpdatedApplicationUser = new ApplicationUser();
         partialUpdatedApplicationUser.setId(applicationUser.getId());
 
+        partialUpdatedApplicationUser.isSkillsPrivate(UPDATED_IS_SKILLS_PRIVATE);
+
         restApplicationUserMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedApplicationUser.getId())
@@ -280,6 +293,7 @@ class ApplicationUserResourceIT {
         assertThat(applicationUserList).hasSize(databaseSizeBeforeUpdate);
         ApplicationUser testApplicationUser = applicationUserList.get(applicationUserList.size() - 1);
         assertThat(testApplicationUser.getMainUsername()).isEqualTo(DEFAULT_MAIN_USERNAME);
+        assertThat(testApplicationUser.getIsSkillsPrivate()).isEqualTo(UPDATED_IS_SKILLS_PRIVATE);
     }
 
     @Test
@@ -294,7 +308,7 @@ class ApplicationUserResourceIT {
         ApplicationUser partialUpdatedApplicationUser = new ApplicationUser();
         partialUpdatedApplicationUser.setId(applicationUser.getId());
 
-        partialUpdatedApplicationUser.mainUsername(UPDATED_MAIN_USERNAME);
+        partialUpdatedApplicationUser.mainUsername(UPDATED_MAIN_USERNAME).isSkillsPrivate(UPDATED_IS_SKILLS_PRIVATE);
 
         restApplicationUserMockMvc
             .perform(
@@ -309,6 +323,7 @@ class ApplicationUserResourceIT {
         assertThat(applicationUserList).hasSize(databaseSizeBeforeUpdate);
         ApplicationUser testApplicationUser = applicationUserList.get(applicationUserList.size() - 1);
         assertThat(testApplicationUser.getMainUsername()).isEqualTo(UPDATED_MAIN_USERNAME);
+        assertThat(testApplicationUser.getIsSkillsPrivate()).isEqualTo(UPDATED_IS_SKILLS_PRIVATE);
     }
 
     @Test

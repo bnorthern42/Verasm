@@ -25,6 +25,9 @@ public class ApplicationUser implements Serializable {
     @Column(name = "main_username")
     private String mainUsername;
 
+    @Column(name = "is_skills_private")
+    private Boolean isSkillsPrivate;
+
     @OneToOne
     @JoinColumn(unique = true)
     private User internalUser;
@@ -55,6 +58,19 @@ public class ApplicationUser implements Serializable {
 
     public void setMainUsername(String mainUsername) {
         this.mainUsername = mainUsername;
+    }
+
+    public Boolean getIsSkillsPrivate() {
+        return this.isSkillsPrivate;
+    }
+
+    public ApplicationUser isSkillsPrivate(Boolean isSkillsPrivate) {
+        this.setIsSkillsPrivate(isSkillsPrivate);
+        return this;
+    }
+
+    public void setIsSkillsPrivate(Boolean isSkillsPrivate) {
+        this.isSkillsPrivate = isSkillsPrivate;
     }
 
     public User getInternalUser() {
@@ -95,6 +111,7 @@ public class ApplicationUser implements Serializable {
         return "ApplicationUser{" +
             "id=" + getId() +
             ", mainUsername='" + getMainUsername() + "'" +
+            ", isSkillsPrivate='" + getIsSkillsPrivate() + "'" +
             "}";
     }
 }

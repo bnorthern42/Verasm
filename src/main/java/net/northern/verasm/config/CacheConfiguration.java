@@ -48,8 +48,6 @@ public class CacheConfiguration {
             createCache(cm, net.northern.verasm.domain.User.class.getName());
             createCache(cm, net.northern.verasm.domain.Authority.class.getName());
             createCache(cm, net.northern.verasm.domain.User.class.getName() + ".authorities");
-            createCache(cm, net.northern.verasm.domain.Skills.class.getName());
-            createCache(cm, net.northern.verasm.domain.ApplicationUser.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Skills.
+    -->
+    <changeSet id="20220915133856-1" author="jhipster">
+        <createTable tableName="skills">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="dumptime" type="varchar(255)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="ux_skills__dumptime" />
+            </column>
+            <column name="playername" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="premium" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="server" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="religion" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="prayer" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="channeling" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="preaching" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="exorcism" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hammers" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="warhammer" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="healing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="firstaid" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="clubs" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hugeclub" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="archery" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shortbow" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mediumbow" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="longbow" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="thievery" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="stealing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="lockpicking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="traps" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="warmachines" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="catapults" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="trebuchets" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="ballistae" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="polearms" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="staff" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="longspear" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="halberd" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="prospecting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="coalmaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="milling" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="tracking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="paving" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="archaeology" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="restoration" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="climbing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="thatching" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="firemaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="pottery" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mining" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="digging" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="ropemaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="smithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="blacksmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="locksmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="jewelrysmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="metallurgy" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="weaponsmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="bladessmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="weaponheadssmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="armoursmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shieldsmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="chainarmoursmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="platearmoursmithing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="tailoring" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="clothtailoring" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="leatherworking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="masonry" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="stonecutting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="cooking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hotfoodcooking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="baking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="dairyfoodmaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="butchering" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="beverages" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="nature" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="fishing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="gardening" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="foraging" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="botanizing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="animaltaming" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="forestry" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="farming" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="milking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="meditating" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="animalhusbandry" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="papyrusmaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="toys" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="yoyo" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="puppeteering" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="fighting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="defensivefighting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="normalfighting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="weaponlessfighting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="aggressivefighting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shieldbashing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="taunting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="miscellaneousitems" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shovel" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="rake" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="saw" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="pickaxe" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="repairing" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="sickle" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="scythe" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hammer" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="stonechisel" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="alchemy" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="naturalsubstances" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shields" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mediummetalshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="smallwoodenshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="smallmetalshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="largemetalshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mediumwoodenshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="largewoodenshield" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="axes" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hatchet" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="smallaxe" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="largeaxe" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="hugeaxe" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="swords" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="longsword" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shortsword" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="twohandedsword" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="knives" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="carvingknife" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="butcheringknife" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="woodcutting" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mauls" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mediummaul" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="smallmaul" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="largemaul" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="carpentry" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="bowyery" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="fletching" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="finecarpentry" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="toymaking" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="shipbuilding" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mind" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mindlogic" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="mindspeed" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="soul" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="souldepth" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="soulstrength" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="body" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="bodystrength" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="bodystamina" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="bodycontrol" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="faith" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="favor" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="alignment" type="double">
+                <constraints nullable="false" />
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20220915133856-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/skills.csv"
+                  separator=";"
+                  tableName="skills"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="dumptime" type="string"/>
+            <column name="playername" type="string"/>
+            <column name="premium" type="string"/>
+            <column name="server" type="string"/>
+            <column name="religion" type="numeric"/>
+            <column name="prayer" type="numeric"/>
+            <column name="channeling" type="numeric"/>
+            <column name="preaching" type="numeric"/>
+            <column name="exorcism" type="numeric"/>
+            <column name="hammers" type="numeric"/>
+            <column name="warhammer" type="numeric"/>
+            <column name="healing" type="numeric"/>
+            <column name="firstaid" type="numeric"/>
+            <column name="clubs" type="numeric"/>
+            <column name="hugeclub" type="numeric"/>
+            <column name="archery" type="numeric"/>
+            <column name="shortbow" type="numeric"/>
+            <column name="mediumbow" type="numeric"/>
+            <column name="longbow" type="numeric"/>
+            <column name="thievery" type="numeric"/>
+            <column name="stealing" type="numeric"/>
+            <column name="lockpicking" type="numeric"/>
+            <column name="traps" type="numeric"/>
+            <column name="warmachines" type="numeric"/>
+            <column name="catapults" type="numeric"/>
+            <column name="trebuchets" type="numeric"/>
+            <column name="ballistae" type="numeric"/>
+            <column name="polearms" type="numeric"/>
+            <column name="staff" type="numeric"/>
+            <column name="longspear" type="numeric"/>
+            <column name="halberd" type="numeric"/>
+            <column name="prospecting" type="numeric"/>
+            <column name="coalmaking" type="numeric"/>
+            <column name="milling" type="numeric"/>
+            <column name="tracking" type="numeric"/>
+            <column name="paving" type="numeric"/>
+            <column name="archaeology" type="numeric"/>
+            <column name="restoration" type="numeric"/>
+            <column name="climbing" type="numeric"/>
+            <column name="thatching" type="numeric"/>
+            <column name="firemaking" type="numeric"/>
+            <column name="pottery" type="numeric"/>
+            <column name="mining" type="numeric"/>
+            <column name="digging" type="numeric"/>
+            <column name="ropemaking" type="numeric"/>
+            <column name="smithing" type="numeric"/>
+            <column name="blacksmithing" type="numeric"/>
+            <column name="locksmithing" type="numeric"/>
+            <column name="jewelrysmithing" type="numeric"/>
+            <column name="metallurgy" type="numeric"/>
+            <column name="weaponsmithing" type="numeric"/>
+            <column name="bladessmithing" type="numeric"/>
+            <column name="weaponheadssmithing" type="numeric"/>
+            <column name="armoursmithing" type="numeric"/>
+            <column name="shieldsmithing" type="numeric"/>
+            <column name="chainarmoursmithing" type="numeric"/>
+            <column name="platearmoursmithing" type="numeric"/>
+            <column name="tailoring" type="numeric"/>
+            <column name="clothtailoring" type="numeric"/>
+            <column name="leatherworking" type="numeric"/>
+            <column name="masonry" type="numeric"/>
+            <column name="stonecutting" type="numeric"/>
+            <column name="cooking" type="numeric"/>
+            <column name="hotfoodcooking" type="numeric"/>
+            <column name="baking" type="numeric"/>
+            <column name="dairyfoodmaking" type="numeric"/>
+            <column name="butchering" type="numeric"/>
+            <column name="beverages" type="numeric"/>
+            <column name="nature" type="numeric"/>
+            <column name="fishing" type="numeric"/>
+            <column name="gardening" type="numeric"/>
+            <column name="foraging" type="numeric"/>
+            <column name="botanizing" type="numeric"/>
+            <column name="animaltaming" type="numeric"/>
+            <column name="forestry" type="numeric"/>
+            <column name="farming" type="numeric"/>
+            <column name="milking" type="numeric"/>
+            <column name="meditating" type="numeric"/>
+            <column name="animalhusbandry" type="numeric"/>
+            <column name="papyrusmaking" type="numeric"/>
+            <column name="toys" type="numeric"/>
+            <column name="yoyo" type="numeric"/>
+            <column name="puppeteering" type="numeric"/>
+            <column name="fighting" type="numeric"/>
+            <column name="defensivefighting" type="numeric"/>
+            <column name="normalfighting" type="numeric"/>
+            <column name="weaponlessfighting" type="numeric"/>
+            <column name="aggressivefighting" type="numeric"/>
+            <column name="shieldbashing" type="numeric"/>
+            <column name="taunting" type="numeric"/>
+            <column name="miscellaneousitems" type="numeric"/>
+            <column name="shovel" type="numeric"/>
+            <column name="rake" type="numeric"/>
+            <column name="saw" type="numeric"/>
+            <column name="pickaxe" type="numeric"/>
+            <column name="repairing" type="numeric"/>
+            <column name="sickle" type="numeric"/>
+            <column name="scythe" type="numeric"/>
+            <column name="hammer" type="numeric"/>
+            <column name="stonechisel" type="numeric"/>
+            <column name="alchemy" type="numeric"/>
+            <column name="naturalsubstances" type="numeric"/>
+            <column name="shields" type="numeric"/>
+            <column name="mediummetalshield" type="numeric"/>
+            <column name="smallwoodenshield" type="numeric"/>
+            <column name="smallmetalshield" type="numeric"/>
+            <column name="largemetalshield" type="numeric"/>
+            <column name="mediumwoodenshield" type="numeric"/>
+            <column name="largewoodenshield" type="numeric"/>
+            <column name="axes" type="numeric"/>
+            <column name="hatchet" type="numeric"/>
+            <column name="smallaxe" type="numeric"/>
+            <column name="largeaxe" type="numeric"/>
+            <column name="hugeaxe" type="numeric"/>
+            <column name="swords" type="numeric"/>
+            <column name="longsword" type="numeric"/>
+            <column name="shortsword" type="numeric"/>
+            <column name="twohandedsword" type="numeric"/>
+            <column name="knives" type="numeric"/>
+            <column name="carvingknife" type="numeric"/>
+            <column name="butcheringknife" type="numeric"/>
+            <column name="woodcutting" type="numeric"/>
+            <column name="mauls" type="numeric"/>
+            <column name="mediummaul" type="numeric"/>
+            <column name="smallmaul" type="numeric"/>
+            <column name="largemaul" type="numeric"/>
+            <column name="carpentry" type="numeric"/>
+            <column name="bowyery" type="numeric"/>
+            <column name="fletching" type="numeric"/>
+            <column name="finecarpentry" type="numeric"/>
+            <column name="toymaking" type="numeric"/>
+            <column name="shipbuilding" type="numeric"/>
+            <column name="mind" type="numeric"/>
+            <column name="mindlogic" type="numeric"/>
+            <column name="mindspeed" type="numeric"/>
+            <column name="soul" type="numeric"/>
+            <column name="souldepth" type="numeric"/>
+            <column name="soulstrength" type="numeric"/>
+            <column name="body" type="numeric"/>
+            <column name="bodystrength" type="numeric"/>
+            <column name="bodystamina" type="numeric"/>
+            <column name="bodycontrol" type="numeric"/>
+            <column name="faith" type="numeric"/>
+            <column name="favor" type="numeric"/>
+            <column name="alignment" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

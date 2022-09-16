@@ -34,7 +34,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/verasm
     username: verasm
-    password: verasm
+    password:
     hikari:
       poolName: Hikari
       auto-commit: false

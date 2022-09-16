@@ -100,6 +100,14 @@ export const ApplicationUserUpdate = () => {
                 type="text"
               />
               <ValidatedField
+                label={translate('verasmApp.applicationUser.isSkillsPrivate')}
+                id="application-user-isSkillsPrivate"
+                name="isSkillsPrivate"
+                data-cy="isSkillsPrivate"
+                check
+                type="checkbox"
+              />
+              <ValidatedField
                 id="application-user-internalUser"
                 name="internalUser"
                 data-cy="internalUser"
