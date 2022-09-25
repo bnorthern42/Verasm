@@ -18,6 +18,7 @@ const initialState: EntityState<ISkills> = {
 };
 
 const apiUrl = 'api/skills';
+const uploadUrl = 'api/skills-dump';
 
 // Actions
 
@@ -38,7 +39,7 @@ export const getEntity = createAsyncThunk(
 export const createEntity = createAsyncThunk(
   'skills/create_entity',
   async (entity: ISkills, thunkAPI) => {
-    return axios.post<ISkills>(apiUrl, cleanEntity(entity));
+    return axios.post<ISkills>(uploadUrl, cleanEntity(entity));
   },
   { serializeError: serializeAxiosError }
 );
