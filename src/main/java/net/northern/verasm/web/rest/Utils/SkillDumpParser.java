@@ -55,7 +55,7 @@ public class SkillDumpParser {
             }
             //match to floats
             Pattern pattern = Pattern.compile(": (?:([0-9]+(\\.[0-9]*)?|\\.[0-9]+))", Pattern.CASE_INSENSITIVE);
-            //replace first set of useless float
+            //replace first set current skill. only take highest skill
             content = pattern.matcher(content).replaceAll("");
             // now we should have
             // skillNameString skillFloat AffinityInteger
@@ -83,9 +83,7 @@ public class SkillDumpParser {
                     skillName.append(skill[i]);
                 }
                 Double SkillNum = Double.parseDouble(skill[stringPosEnd + 1]);
-                if (
-                    SkillNum == 0.0
-                ) return; //skip 0.0 skills, (possible group denoting)
+                if (SkillNum == 0.0) return; //skip 0.0 skills, (possible group denoting)
                 Integer affinity = Integer.parseInt(skill[stringPosEnd + 2]);
                 //make lower skillname
                 skillName = new StringBuilder(skillName.toString().toLowerCase());
